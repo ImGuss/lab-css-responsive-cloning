@@ -1,3 +1,369 @@
+$border-color: #e8e8e8;
+$font-color: rgb(153, 153, 153);
+$main-red: #da552f;
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  margin: 0 auto;
+  padding: 0;
+  width: 1070px;
+  background: #f9f9f9;
+}
+
 body {
   background: #f9f9f9;
+  color: $font-color;
+  font-size: 14px;
+  font-family: proxima nova, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px lightgrey;
+  margin: 0;
+}
+
+.header-container {
+  margin: 0 auto;
+}
+
+.top-header {
+  height: 50px;
+  // width: 1070px;
+}
+
+.top-logo {
+  display: block;
+  height: 45px;
+  width: 45px;
+  float: left;
+  margin-top: 2px;
+}
+
+.header-search-bar {
+  float: left;
+  padding: 5px 10px;
+  margin-top: 8px;
+  margin-left: 5px;
+  height: 16px;
+  border: solid $border-color 1px;
+  color: $font-color;
+  // background-color: red;
+  width: 82%;
+}
+
+.search-image {
+  width: 16px;
+  float: left;
+  margin-right: 5px;
+}
+
+.header-login {
+  float: right;
+  padding: 5px 2px;
+  font-size: 14px;
+  margin: 10px auto;
+}
+
+.three-dot {
+  float: right;
+  margin: auto;
+  font-family: sans-serif;
+  margin: 10px 30px;
+}
+
+.header-login:hover,
+.three-dot:hover {
+  color: $main-red;
+}
+
+.header-menu {
+  border-top: solid $border-color 1px;
+  // width: 1070px;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-table,
+.menu-table > td {
+  margin: 0 10px;
+  padding: 10px 20px;
+}
+
+
+.welcome {
+  margin: 40px 10px;
+  background-color: #fff;
+}
+
+.welcome-message {
+  color: #000;
+  background-color: #fff;
+}
+
+.subsribe {
+  color: $font-color;
+  background-color: #fff;
+}
+
+
+.recommended {
+  height: 45px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 200;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 0;
+  background-color: #fff;
+  border-top: 1px solid $border-color;
+}
+
+.content-div {
+  height: 100px;
+  border-top: 1px solid $border-color;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  background-color: #fff;
+}
+
+.app-img {
+  float: left;
+  height: 80px;
+  margin-top: 5px;
+}
+
+.app-info {
+  float: left;
+  height: 70px;
+  margin-left: 20px;
+}
+
+.app-name {
+  float: left;
+  font-size: 20px;
+  font-weight: 200;
+  color: black;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.app-about {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 2px
+}
+
+.app-buttons {
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.app-likes {
+  font-size: 12px;
+  color: #000;
+  border: 1px solid $border-color;
+  width: 55px;
+  height: 20px;
+  border-radius: 1px;
+  float: left;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.app-comments {
+  font-size: 12px;
+  border: 1px solid $border-color;
+  width: 50px;
+  height: 20px;
+  border-radius: 1px;
+  float: left;
+  margin-left: 10px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 769px) {
+
+  .welcome,
+  .welcome-message,
+  .subsribe {
+    display: none;
+  }
+
+  .header {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header-container {
+    margin: 0 auto;
+  }
+
+  .top-header {
+    height: 50px;
+  }
+
+  .top-logo {
+    display: block;
+    height: 45px;
+    width: 45px;
+    float: left;
+    margin-top: 2px;
+  }
+
+  .header-search-bar {
+    float: left;
+    padding: 5px 10px;
+    margin-top: 8px;
+    margin-left: 5px;
+    height: 16px;
+    color: $font-color;
+    width: 75%;
+    border: none;
+  }
+
+  .search-image {
+    width: 16px;
+    float: left;
+    margin-right: 5px;
+  }
+
+  .header-login {
+    float: right;
+    padding: 5px 2px;
+    font-size: 14px;
+    margin: 10px auto;
+  }
+
+  .three-dot {
+    float: right;
+    margin: auto;
+    font-family: sans-serif;
+    margin: 10px 30px;
+  }
+
+  .header-menu {
+    border-top: solid $border-color 1px;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu-table,
+  .menu-table > td {
+    margin: 0 10px;
+    padding: 10px 20px;
+  }
+
+  .menu-table > td:hover {
+    color: $main-red;
+  }
+
+  .main-container {
+    width: 769px;
+    padding: 0;
+    margin: 0px auto;
+  }
+
+  .recommended {
+    height: 45px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+
+  .content-div {
+    height: 100px;
+    border-top: 1px solid $border-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .app-img {
+    float: left;
+    height: 80px;
+    margin-top: 5px;
+  }
+
+  .app-info {
+    float: left;
+    height: 70px;
+    margin-left: 20px;
+  }
+
+  .app-name {
+    float: left;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .app-about {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 2px
+  }
+
+  .app-buttons {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .app-likes {
+    font-size: 12px;
+    color: #000;
+    border: 1px solid $border-color;
+    width: 55px;
+    height: 20px;
+    border-radius: 1px;
+    float: left;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .app-comments {
+    font-size: 12px;
+    border: 1px solid $border-color;
+    width: 50px;
+    height: 20px;
+    border-radius: 1px;
+    float: left;
+    margin-left: 10px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
 }
